@@ -1,0 +1,30 @@
+{
+  "name": "auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamsirjan/registrationwithnode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamsirjan/registrationwithnode/issues"
+  },
+  "homepage": "https://github.com/iamsirjan/registrationwithnode#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-routes": "^1.0.1",
+    "mongoose": "^5.12.3",
+    "package.json": "^2.0.1",
+    "server": "^1.0.32"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
