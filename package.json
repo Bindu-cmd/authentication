@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -17,11 +18,13 @@
   },
   "homepage": "https://github.com/iamsirjan/registrationwithnode#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "express-routes": "^1.0.1",
     "mongoose": "^5.12.3",
     "package.json": "^2.0.1",
+    "salt": "^0.5.5",
     "server": "^1.0.32"
   },
   "devDependencies": {

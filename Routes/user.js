@@ -1,9 +1,10 @@
+const bcrypt = require('bcrypt')
 const express = require("express");
 const router = express.Router();
 const User = require("../models/user");
 
 
-router.post("/", function (req, res, next) {
+router.post("/register", function (req, res, next) {
   console.log(req.body);
   var personInfo = req.body;
 
@@ -34,7 +35,7 @@ router.post("/", function (req, res, next) {
               password: personInfo.password,
               passwordConf: personInfo.passwordConf,
             });
-
+       
             newPerson.save(function (err, Person) {
               if (err) console.log(err);
               else console.log("Success");

@@ -2,12 +2,13 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const user = require("./Routes/user");
 const app = express();
+const auth = require('./routes/auth');
 const mongoose = require("mongoose");
 // Initiate Mongo Server
 mongoose.set("useCreateIndex", true);
 
 mongoose.connect(
-  "mongodb+srv://sirjan:gunsnroses12@cluster0.5hmpa.mongodb.net/register?retryWrites=true&w=majority",
+ "mongodb+srv://bindu:jimblennn@cluster0.fyv2e.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
   { useNewUrlParser: true, useUnifiedTopology: true }
 );
 mongoose.connection
@@ -26,7 +27,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/user", user);
-
+app.use('/api/auth', auth);
 app.listen(PORT, (req, res) => {
   console.log(`Server Started at PORT ${PORT}`);
 });
